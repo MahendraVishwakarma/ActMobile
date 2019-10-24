@@ -18,9 +18,9 @@ struct Orders: Codable {
 
 // MARK: - Sale
 struct Sale: Codable {
-    let prod: String
-    let country: String
-    let price: Int
+    var prod: String
+    var country: String
+    var price: Int
 }
 
 

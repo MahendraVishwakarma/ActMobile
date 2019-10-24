@@ -10,16 +10,23 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var dropDownView:DropDownView!
     var allOrder : Orders!
+    var filteredData = Array<Sale>()
+    
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.fetchJSON()
         tableview.register(UINib(nibName: "MenuCell", bundle: nil), forCellReuseIdentifier: "cell")
-        // Do any additional setup after loading the view.
+        self.setupDropDown()
+        
     }
 
-
+    @IBAction func dropDownAction(_ sender: Any) {
+        dropDownFrame()
+    }
+    
 }
 

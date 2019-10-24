@@ -19,6 +19,11 @@
 		80FC80A42360C4F000C1E197 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC80A32360C4F000C1E197 /* JSONData.swift */; };
 		80FC80A82360CB8A00C1E197 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FC80A62360CB8A00C1E197 /* MenuCell.xib */; };
 		80FC80A92360CB8A00C1E197 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC80A72360CB8A00C1E197 /* MenuCell.swift */; };
+		80FC80AB2361E82100C1E197 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC80AA2361E82100C1E197 /* DropDownView.swift */; };
+		80FC80AD2361E82E00C1E197 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FC80AC2361E82E00C1E197 /* DropDownView.xib */; };
+		80FC80B02361EAE800C1E197 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC80AE2361EAE800C1E197 /* ProductCell.swift */; };
+		80FC80B12361EAE800C1E197 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FC80AF2361EAE800C1E197 /* ProductCell.xib */; };
+		80FC80B6236215B500C1E197 /* AppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC80B5236215B500C1E197 /* AppProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		80FC80A32360C4F000C1E197 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		80FC80A62360CB8A00C1E197 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		80FC80A72360CB8A00C1E197 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		80FC80AA2361E82100C1E197 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		80FC80AC2361E82E00C1E197 /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		80FC80AE2361EAE800C1E197 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		80FC80AF2361EAE800C1E197 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		80FC80B5236215B500C1E197 /* AppProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 		80FC80812360C0BF00C1E197 /* ActAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				80FC80B42362158D00C1E197 /* Protocols */,
 				80FC80A52360CB7300C1E197 /* SubViews */,
 				80FC80A02360C2F700C1E197 /* Extension */,
 				80FC80992360C22700C1E197 /* Enums */,
@@ -145,8 +156,20 @@
 			children = (
 				80FC80A72360CB8A00C1E197 /* MenuCell.swift */,
 				80FC80A62360CB8A00C1E197 /* MenuCell.xib */,
+				80FC80AA2361E82100C1E197 /* DropDownView.swift */,
+				80FC80AC2361E82E00C1E197 /* DropDownView.xib */,
+				80FC80AE2361EAE800C1E197 /* ProductCell.swift */,
+				80FC80AF2361EAE800C1E197 /* ProductCell.xib */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		80FC80B42362158D00C1E197 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80FC80B5236215B500C1E197 /* AppProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +232,9 @@
 			files = (
 				80FC809F2360C28900C1E197 /* input_ios.json in Resources */,
 				80FC808D2360C0C100C1E197 /* LaunchScreen.storyboard in Resources */,
+				80FC80B12361EAE800C1E197 /* ProductCell.xib in Resources */,
 				80FC80A82360CB8A00C1E197 /* MenuCell.xib in Resources */,
+				80FC80AD2361E82E00C1E197 /* DropDownView.xib in Resources */,
 				80FC808A2360C0C100C1E197 /* Assets.xcassets in Resources */,
 				80FC80882360C0BF00C1E197 /* Main.storyboard in Resources */,
 			);
@@ -223,10 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				80FC80A92360CB8A00C1E197 /* MenuCell.swift in Sources */,
+				80FC80B6236215B500C1E197 /* AppProtocols.swift in Sources */,
 				80FC80852360C0BF00C1E197 /* HomeViewController.swift in Sources */,
 				80FC809B2360C24900C1E197 /* CommonUtils.swift in Sources */,
 				80FC80A22360C47200C1E197 /* HomeViewController_Ext.swift in Sources */,
 				80FC809D2360C26500C1E197 /* AppEnums.swift in Sources */,
+				80FC80AB2361E82100C1E197 /* DropDownView.swift in Sources */,
+				80FC80B02361EAE800C1E197 /* ProductCell.swift in Sources */,
 				80FC80832360C0BF00C1E197 /* AppDelegate.swift in Sources */,
 				80FC80A42360C4F000C1E197 /* JSONData.swift in Sources */,
 			);

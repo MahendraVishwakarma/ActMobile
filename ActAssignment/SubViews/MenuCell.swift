@@ -26,7 +26,7 @@ class MenuCell: UITableViewCell {
     
     func setInfo(info:Sale) {
         nameLabel.text = info.country
-        subCategory.text = "₹\(info.price)"
+        subCategory.text = "sales: ₹\(info.price)"
         proName.text = info.prod
     }
     
